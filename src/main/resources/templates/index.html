@@ -11,6 +11,7 @@
           crossorigin="anonymous">
 
 </head>
+
 <body>
 <!-- create navigation bar ( header) -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,7 +27,7 @@
             <a class="navbar-brand" href="#" th:href="@{/}">Registration and
                 Login Module</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
+        <div  id="navbar" class="collapse nav-bar collapsed ui-corner-right ">
             <ul class="nav navbar-nav">
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Logout</a></li>
             </ul>
