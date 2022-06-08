@@ -20,7 +20,7 @@ import javaguides.springboot.web.dto.UserRegistrationDto;
 @Service
 public class UserServiceImpl implements UserService{
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     private BCryptPasswordEncoder passwordEncoder;
